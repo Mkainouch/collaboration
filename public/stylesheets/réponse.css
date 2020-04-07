@@ -1,0 +1,146 @@
+body{
+    display: flex;
+}
+.cl{
+    border: 2px solid white;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.cll{
+    border: 2px solid white;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cl1{
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+    border: 2px solid white;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.cl1c{
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+    border: 2px solid white;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.container-xl h3 {
+    color:#f5f6fa;
+    font-size: 15px;
+    margin: 0;
+}
+.container-xl p{
+    color: #dcdde1;
+}
+.top{
+    padding-top: 22px;
+}
+.cn{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+#a1{
+    background-image: url(/images/img/test2.jpg) ;
+    background-size: cover;
+}
+#a2{
+    background-image: url(/images/img/test.jpg) ;
+    background-size: cover;  
+}
+#a3{
+    background-image: url(/images/img/test3.jpg) ;
+    background-size: cover;  
+}
+#a4{
+    background-image: url(/images/img/test4.jpg) ;
+    background-size: cover;  
+}
+.tt{
+   margin-top: 110px;
+   margin-bottom:100px;
+   background-color: #ffffff;
+   display: none;
+}
+.icon{
+    height: 60px;
+    display: flex;
+}
+.icon img{
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+.high{
+    height: 700px;
+}
+.depart{
+    background-color:#ffffff;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msg{
+    padding: 0;
+    padding-top: 90px ;
+    background-color: #f1f2f6;
+    flex-direction: column;
+}    
+.affichage{
+    background-color:#f1f2f6;
+    padding: 0;
+    padding-top: 30px;
+    
+}
+.icodepart{
+    margin-top: 25px;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.changetoast{
+    padding: 20px 10px;
+    
+}
+.cd{
+    background-color: transparent;
+}
+.changetoast:hover{
+    background-color:#ffffff;
+    border-right:none;
+    border-right: 3px solid #70a1ff;
+    padding: 30px 10px;
+}    
+.affi{
+    background-color:#ffffff ;
+    height: 95%;
+}
+.affi , h6{
+    color:#95a5a6;
+}
