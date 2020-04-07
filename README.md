@@ -1,6 +1,7 @@
 # brief-6-collaboration
 
 collaboration entre: 
+====================
 
 => Ibrahim HAJIRI: 
     _ Accueil => une page d'acceuil pour le site avec un menu et un contenu adapté (texte correcte /et images) 
