@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
+
 /* GET users listing. */
 router.get('/administratifetfinancier', function(req, res, next) {
-  res.render('index');
+  res.render('index', { title: 'Express' });
+  
 });
 
 module.exports = router;

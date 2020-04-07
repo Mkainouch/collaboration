@@ -11,19 +11,19 @@
   <div></div>
    <div class="container-xl "  id="cont">
    <div class="row cn" onmouseout="myFunction(4)" >
-     <div onclick="window.location='/depatement/administratifetfinancier';display();icon(0)" onmouseover="myFunction(0) " onclick=" icon(0) , <go to url sending data using the post method>"   class="col-3  cl  "  id="a1">
+     <div onclick="window.location='/administratifetfinancier'" onmouseover="myFunction(0) "    class="col-3  cl  "  id="a1">
        <h3 class="t" >DEPARTEMENT</h3>
        <p class="t" >ADMINISTRATIF ET FINANCIER </p>
       </div>
-     <div onclick="window.location='/depatement/gestionurbaine';display();icon(1)" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
+     <div onclick="window.location='/gestionurbaine'" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
        <h3>DEPARTEMENT</h3>
        <p>DE LA GESTION URBAINE </p>
       </div>
-     <div onclick="window.location='/depatement/affairesjuridiquesetfoncieres';display();icon(2)" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
+     <div onclick="window.location='/affairesjuridiquesetfoncieres'" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
        <h3>DEPARTEMENT</h3>
        <p>DES AFFAIRES JURIDIQUES ET FONCIERES</p>
       </div>
-     <div  onclick="window.location='/depatement/etudes';display();icon(3)" onmouseover="myFunction(3)" class="col-3  cl" id="a4">
+     <div  onclick="window.location='/etudes'" onmouseover="myFunction(3)" class="col-3  cl" id="a4">
        <h3>DEPARTEMENT</h3>
        <p>DES ETUDES</p>
       </div>
@@ -35,15 +35,17 @@
             <img src="images/icon/information.svg">
         </div>
         <div class="col-10 "></div>
-        <div class="col-1 icon"></div>
+        <div class="col-1 depart ">
+          <a href="/" ><img src="/images/icon/home.svg" class="icodepart mt-0" ></a>
+        </div>
     </div>
     <div class="row high" >
      <div class="col-1 depart">
-         <a href="#" onclick="icon(0) "><img src="/images/icon/risk.svg" class="icodepart" id="c1"></a>
-         <a href="#" onclick="icon(1)"><img src="/images/icon/team.svg" class="icodepart" id="c2"></a>
-         <a href="#" onclick="icon(2)"><img src="/images/icon/contract.svg" class="icodepart" id="c3"></a>
-         <a href="#" onclick="icon(3)"><img src="/images/icon/book.svg" class="icodepart" id="c4"></a>
-         <a href="#" onclick="icon(4)"><img src="/images/icon/share.svg" class="icodepart" ></a> 
+         <a href="/administratifetfinancier" ><img src="/images/icon/risk.svg" class="icodepart" id="c1"></a>
+         <a href="/gestionurbaine" ><img src="/images/icon/team.svg" class="icodepart" id="c2"></a>
+         <a href="/affairesjuridiquesetfoncieres" ><img src="/images/icon/contract.svg" class="icodepart" id="c3"></a>
+         <a href="/etudes" ><img src="/images/icon/book.svg" class="icodepart" id="c4"></a>
+         <a href="/autre" ><img src="/images/icon/share.svg" class="icodepart" ></a> 
      </div>
      <div class="col-4  msg">
          <div class=" changetoast ">
@@ -89,6 +91,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-<script src="javascripts/réponse.js"></script> 
+<script src="/javascripts/réponse.js"></script> 
 </body>
 </html>

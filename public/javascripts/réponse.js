@@ -89,6 +89,27 @@ function icon(name){
     y=document.getElementById("cont1");
     x.style.display ="none";
     y.style.display ="block";
-    console.log('hallo');
   }
-  module.exports = event;
+  switch (window.location.pathname) {
+    case '/administratifetfinancier':
+      display();
+      icon(0);
+      break;
+    case '/gestionurbaine':
+      display();
+      icon(1);
+      break;
+    case '/affairesjuridiquesetfoncieres':
+      display();
+      icon(2);
+      break;
+    case '/etudes':
+      display();
+      icon(3);
+      break;       
+    case '/autre':
+      display();
+      icon(4);
+      break;
+      
+  }
