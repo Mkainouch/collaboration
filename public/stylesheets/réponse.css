@@ -144,3 +144,11 @@ body{
 .affi , h6{
     color:#95a5a6;
 }
+.overfl {
+    width: 320px;
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+  }

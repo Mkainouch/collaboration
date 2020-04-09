@@ -91,15 +91,15 @@ function icon(name){
     y.style.display ="block";
   }
   switch (window.location.pathname) {
-    case '/administratifetfinancier':
+    case '/administratif%20et%20financier':
       display();
       icon(0);
       break;
-    case '/gestionurbaine':
+    case '/gestion%20urbaine':
       display();
       icon(1);
       break;
-    case '/affairesjuridiquesetfoncieres':
+    case '/affaires%20juridiques%20et%20foncieres':
       display();
       icon(2);
       break;
@@ -112,4 +112,14 @@ function icon(name){
       icon(4);
       break;
       
+  }
+  function affichage(){
+    x=document.getElementById("titre").innerHTML;
+    y=document.getElementById("msg").innerHTML;
+    z=document.getElementById("mail").innerHTML;
+    document.getElementById("dis").className="col-12 p-5";
+    document.getElementById("titreaf").innerHTML= x;
+    document.getElementById("msgaf").innerHTML = y;
+    document.getElementById("mailaf").innerHTML =z;
+    
   }

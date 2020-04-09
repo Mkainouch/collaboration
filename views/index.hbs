@@ -11,15 +11,15 @@
   <div></div>
    <div class="container-xl "  id="cont">
    <div class="row cn" onmouseout="myFunction(4)" >
-     <div onclick="window.location='/administratifetfinancier'" onmouseover="myFunction(0) "    class="col-3  cl  "  id="a1">
+     <div onclick="window.location='/administratif et financier'" onmouseover="myFunction(0) "    class="col-3  cl  "  id="a1">
        <h3 class="t" >DEPARTEMENT</h3>
        <p class="t" >ADMINISTRATIF ET FINANCIER </p>
       </div>
-     <div onclick="window.location='/gestionurbaine'" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
+     <div onclick="window.location='/gestion urbaine'" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
        <h3>DEPARTEMENT</h3>
        <p>DE LA GESTION URBAINE </p>
       </div>
-     <div onclick="window.location='/affairesjuridiquesetfoncieres'" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
+     <div onclick="window.location='/affaires juridiques et foncieres'" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
        <h3>DEPARTEMENT</h3>
        <p>DES AFFAIRES JURIDIQUES ET FONCIERES</p>
       </div>
@@ -41,42 +41,36 @@
     </div>
     <div class="row high" >
      <div class="col-1 depart">
-         <a href="/administratifetfinancier" ><img src="/images/icon/risk.svg" class="icodepart" id="c1"></a>
-         <a href="/gestionurbaine" ><img src="/images/icon/team.svg" class="icodepart" id="c2"></a>
-         <a href="/affairesjuridiquesetfoncieres" ><img src="/images/icon/contract.svg" class="icodepart" id="c3"></a>
+         <a href="/administratif et financier" ><img src="/images/icon/risk.svg" class="icodepart" id="c1"></a>
+         <a href="/gestion urbaine" ><img src="/images/icon/team.svg" class="icodepart" id="c2"></a>
+         <a href="/affaires juridiques et foncieres" ><img src="/images/icon/contract.svg" class="icodepart" id="c3"></a>
          <a href="/etudes" ><img src="/images/icon/book.svg" class="icodepart" id="c4"></a>
          <a href="/autre" ><img src="/images/icon/share.svg" class="icodepart" ></a> 
      </div>
-     <div class="col-4  msg">
+     <div class="col-4  msg"  onmouseover=" affichage() ">
+        
          <div class=" changetoast ">
-         <div class="toast-header cd  ">
-             <strong class="mr-auto">Bootstrap</strong>
-             <small>11 mins ago</small>
-           </div>
-           <div class="toast-body">
-             Hello, world! This is a toast message.
-           </div>
-         </div>
-         <div class=" changetoast ">
-             <div class="toast-header cd  ">
-                 <strong class="mr-auto">Bootstrap</strong>
+             <div class="toast-header cd  " onclick=" affichage() ">
+                 <strong class="mr-auto" id="titre">Bootstrap</strong>
                  <small>11 mins ago</small>
                </div>
-               <div class="toast-body">
-                 Hello, world! This is a toast message.
+               <div class="toast-body overfl" >
+                 <p class="overfl" id="msg">Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message</p>
                </div>
+               <div class="d-none" id="mail">Email:hicham.boudanes@gmail.com <br> par:hicham boudanes</div>
+              
          </div>
      </div>
      <div class="col-7 affichage ">
          <div class="col-11 affi p-0 border rounded">
              <div class="col-12 border-bottom  icon align-items-center">
-                 <h6>ADMINISTRATIF ET FINANCIER</h6>
+                 <h6 style="text-transform: uppercase;">{{title}}</h6>
              </div>
              <div>
-             <div class="col-12 p-5">
-               <h4>Bootstrap</h4>
-                <p>Email:hicham.boudanes@gmail.com <br> par:hicham boudanes</p>
-               <p class="p-1">Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message</p>
+             <div class="col-12 p-5 d-none" id="dis">
+               <h4 id="titreaf"></h4>
+                <p id="mail"></p>
+               <p class="p-1" id="msgaf"></p>
                <div class="form-group">
                 <label for="comment">répondre:</label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
