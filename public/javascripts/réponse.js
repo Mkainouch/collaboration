@@ -1,4 +1,5 @@
 
+
 function myFunction (name){
   var x = document.getElementById("a1"),
       y = document.getElementById("a2"),
@@ -113,13 +114,44 @@ function icon(name){
       break;
       
   }
-  function affichage(){
-    x=document.getElementById("titre").innerHTML;
-    y=document.getElementById("msg").innerHTML;
-    z=document.getElementById("mail").innerHTML;
+
+  function affichage(p){
+  var   x=document.getElementById("titre"+p+"").innerHTML,
+        y=document.getElementById("msg"+p+"").innerHTML,
+        z=document.getElementById("mail"+p+"").innerHTML
+        t=document.getElementById("det"+p+"").innerHTML,
+        k=document.getElementById("rps"+p+"").innerHTML,
+        l=document.getElementById("rpsaf"),
+        i=document.getElementById("input1"),
+        btn1= document.getElementById("btns1"),
+        btn2= document.getElementById("btns2");
+       
+    if (k=="") {
+      i.style.display = "block";
+      l.style.display = "none";
+      document.getElementById('repo').innerHTML = 'répondre:';
+      btn2.style.display = "none";
+      btn1.style.display = "block";
+    } else {
+      i.style.display = "none";
+      l.style.display = "block";
+      document.getElementById('repo').innerHTML = 'réponse:';
+      btn2.style.display = "block";
+      btn1.style.display = "none";
+    }
+     
     document.getElementById("dis").className="col-12 p-5";
+    document.getElementById("rpsaf").innerHTML = k;
     document.getElementById("titreaf").innerHTML= x;
     document.getElementById("msgaf").innerHTML = y;
     document.getElementById("mailaf").innerHTML =z;
-    
+    document.getElementById("get").value =t;
   }
+function modifier(){
+  i.style.display = "block";
+  l.style.display = "none";
+  document.getElementById('repo').innerHTML = 'répondre:';
+  btn2.style.display = "none";
+  btn1.style.display = "block";
+}
+ 

@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>{{title}}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/stylesheets/réponse.css">
-  </head>
-<body onresize="myFunction ()">
-  <div></div>
-   <div class="container-xl "  id="cont">
-   <div class="row cn" onmouseout="myFunction(4)" >
-     <div onclick="window.location='/administratif et financier'" onmouseover="myFunction(0) "    class="col-3  cl  "  id="a1">
-       <h3 class="t" >DEPARTEMENT</h3>
-       <p class="t" >ADMINISTRATIF ET FINANCIER </p>
-      </div>
-     <div onclick="window.location='/gestion urbaine'" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
-       <h3>DEPARTEMENT</h3>
-       <p>DE LA GESTION URBAINE </p>
-      </div>
-     <div onclick="window.location='/affaires juridiques et foncieres'" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
-       <h3>DEPARTEMENT</h3>
-       <p>DES AFFAIRES JURIDIQUES ET FONCIERES</p>
-      </div>
-     <div  onclick="window.location='/etudes'" onmouseover="myFunction(3)" class="col-3  cl" id="a4">
-       <h3>DEPARTEMENT</h3>
-       <p>DES ETUDES</p>
-      </div>
-   </div>
-   </div>
-   <div class="container  tt border rounded " id="cont1">
-    <div class="row border-bottom ">
-        <div class="col-1 icon">
-            <img src="images/icon/information.svg">
-        </div>
-        <div class="col-10 "></div>
-        <div class="col-1 depart ">
-          <a href="/" ><img src="/images/icon/home.svg" class="icodepart mt-0" ></a>
-        </div>
-    </div>
-    <div class="row high" >
-     <div class="col-1 depart">
-         <a href="/administratif et financier" ><img src="/images/icon/risk.svg" class="icodepart" id="c1"></a>
-         <a href="/gestion urbaine" ><img src="/images/icon/team.svg" class="icodepart" id="c2"></a>
-         <a href="/affaires juridiques et foncieres" ><img src="/images/icon/contract.svg" class="icodepart" id="c3"></a>
-         <a href="/etudes" ><img src="/images/icon/book.svg" class="icodepart" id="c4"></a>
-         <a href="/autre" ><img src="/images/icon/share.svg" class="icodepart" ></a> 
-     </div>
-     <div class="col-4  msg"  onmouseover=" affichage() ">
-        
-         <div class=" changetoast ">
-             <div class="toast-header cd  " onclick=" affichage() ">
-                 <strong class="mr-auto" id="titre">Bootstrap</strong>
-                 <small>11 mins ago</small>
-               </div>
-               <div class="toast-body overfl" >
-                 <p class="overfl" id="msg">Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message Hello, world! This is a toast message</p>
-               </div>
-               <div class="d-none" id="mail">Email:hicham.boudanes@gmail.com <br> par:hicham boudanes</div>
-              
-         </div>
-     </div>
-     <div class="col-7 affichage ">
-         <div class="col-11 affi p-0 border rounded">
-             <div class="col-12 border-bottom  icon align-items-center">
-                 <h6 style="text-transform: uppercase;">{{title}}</h6>
-             </div>
-             <div>
-             <div class="col-12 p-5 d-none" id="dis">
-               <h4 id="titreaf"></h4>
-                <p id="mail"></p>
-               <p class="p-1" id="msgaf"></p>
-               <div class="form-group">
-                <label for="comment">répondre:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-                <button type="submit" class="btn btn-outline-primary float-right mt-2">envoyer</button>
-              </div>
-             </div>
-            </div>
-         </div>
-     </div>
- </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-<script src="/javascripts/réponse.js"></script> 
-</body>
-</html>
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+					<link rel="stylesheet" href="/stylesheets/réponse.css">
+					</head>
+					<body onresize="myFunction()">
+				
+						<div class="container-xl "  id="cont">
+							<div class="row cn " onmouseout="myFunction(4)" >
+								<div onclick="window.location='/administratif et financier'" onmouseover="myFunction(0) "    class="col-3  cl  "  id="a1">
+									<h3 class="t" >DEPARTEMENT</h3>
+									<p class="t" >ADMINISTRATIF ET FINANCIER </p>
+								</div>
+								<div onclick="window.location='/gestion urbaine'" onmouseover="myFunction(1)"   class="col-3  cl" id="a2">
+									<h3>DEPARTEMENT</h3>
+									<p>DE LA GESTION URBAINE </p>
+								</div>
+								<div onclick="window.location='/affaires juridiques et foncieres'" onmouseover="myFunction(2)" class="col-3 cl top" id="a3">
+									<h3>DEPARTEMENT</h3>
+									<p>DES AFFAIRES JURIDIQUES ET FONCIERES</p>
+								</div>
+								<div  onclick="window.location='/etudes'" onmouseover="myFunction(3)" class="col-3  cl" id="a4">
+									<h3>DEPARTEMENT</h3>
+									<p>DES ETUDES</p>
+								</div>
+							</div>
+						</div>
+						<div class="container  tt border rounded " id="cont1">
+							<div class="row border-bottom ">
+								<div class="col-1 icon">
+									<img src="images/icon/information.svg">
+									</div>
+									<div class="col-10 "></div>
+									<div class="col-1 depart ">
+										<a href="/" >
+											<img src="/images/icon/home.svg" class="icodepart mt-0" >
+											</a>
+										</div>
+									</div>
+									<div class="row high" >
+										<div class="col-1 depart">
+											<a href="/administratif et financier" >
+												<img src="/images/icon/risk.svg" class="icodepart" id="c1">
+												</a>
+												<a href="/gestion urbaine" >
+													<img src="/images/icon/team.svg" class="icodepart" id="c2">
+													</a>
+													<a href="/affaires juridiques et foncieres" >
+														<img src="/images/icon/contract.svg" class="icodepart" id="c3">
+														</a>
+														<a href="/etudes" >
+															<img src="/images/icon/book.svg" class="icodepart" id="c4">
+															</a>
+															<a href="/autre" >
+																<img src="/images/icon/share.svg" class="icodepart" >
+																</a>
+															</div>
+															<div class="col-4 overflow-auto  msg"   >													
+															     {{{mess}}}
+														
+																</div>
+																<div class="col-7 affichage ">
+																	<div class="col-11 affi p-0 border rounded">
+																		<div class="col-12 border-bottom  icon align-items-center">
+																			<h6 style="text-transform: uppercase;">{{title}}</h6>
+																		</div>
+																		<div>
+																			<div class="col-12 p-5 d-none" id="dis">
+																				
+																				<h4 id="titreaf"></h4>
+																				<p id="mailaf"></p>
+																				<p class="p-1" id="msgaf"></p>
+																				<form class="form-group" action="{{action}}" method="post" >
+																					<label id="repo">répondre:</label>
+																					<p class="p-1 " id="rpsaf"></p>
+																					<input type="text" class="form-control " id="input1" rows="5" name="comment">
+																					<input type="text" class="form-control d-none" id="get" rows="5" name="getid" >
+																					<button type="submit" class="btn btn-outline-primary float-right mt-2" id="btns1" >envoyer</button>
+																					<button type="button" class="btn btn-outline-success float-right mt-2" id="btns2" onclick="modifier()">modifier</button>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+														<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+														<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+														<script src="/javascripts/réponse.js"></script>
+													</body>
+												</html>

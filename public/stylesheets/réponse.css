@@ -108,9 +108,13 @@ body{
 .msg{
     padding: 0;
     padding-top: 90px ;
+    height: 100%;
     background-color: #f1f2f6;
     flex-direction: column;
 }    
+.msg::-webkit-scrollbar {
+    display: none;
+}
 .affichage{
     background-color:#f1f2f6;
     padding: 0;
@@ -151,4 +155,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 10px;
+  }
+  .det1{
+      display: none;
   }
